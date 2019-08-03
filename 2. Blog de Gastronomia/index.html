@@ -4,279 +4,163 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Gastronomia Blog</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="row collapse">
-      <div class="columns small-4 medium-3 large-2">
-        <h2 class="e-Store">e-Store</h2>
+    <!-- Comienza el contenido de la pagina-->
+    <div class="contenido">
+      <!-- Banner con Logo y Slogan-->
+      <div class="contenido-top">
+        <div class="row">
+          <div class="columns large-4 logo-columna-izquierda">
+            <img id="logo" class="circle" src="img/gastronomia_icon.png" alt="Si ves este mensaje tu browser no soporta la visualizacion de esta imagen">
+            <h2>Gastronomía Daniel</h2>
+            <span id="slogan">Aquí puedes encontrar todo lo relacionado a Gastronomía</span>
+            <br><br>
+          </div>
+          <div class="columns large-8">
+            <!-- Campo vacio para completar la maqueta-->
+          </div>
+        </div>
       </div>
-      <div class="columns medium-9 large-6 large-offset-4 main-menu">
-        <div class="row align-left show-for-medium">
-          <div class="column medium-10 medium-offset-2 large-10 large-offset-3">
-            <div class="menu">
-              <ul class="menu ">
-                <li><a href="#">Ingresa</a></li>
-                <li><a href="#">Regístrate</a></li>
-                <li><a href="#">Ayuda</a></li>
-                <li><a href="#">Mapa del Sitio</a></li>
-              </ul>
+      <hr>
+      <!-- Contenido de la pagina-->
+      <div class="row">
+        <div class="columns large-4">
+          <div class="row columns collapse">
+
+            <!-- Columna contenido de lado izquierdo-->
+            <div class="columna-izquierda">
+              <div class="buscar">
+                <div class="row columns">
+                  <form class="" action="index.html" method="post">
+                    <div class="form-icons">
+                      <div class="input-group">
+                        <span class="input-group-label"> <i class="step fi-magnifying-glass size-24"></i> </span>
+                        <input class="input-group-field" type="text" placeholder="Buscar" maxlength="40">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <br>
+              <!-- Aqui comienza el Menu de la izquierda-->
+              <div class="menu-izquierda">
+                <div class="row columns btn-group">
+                  <div class="column small-12"><a class="button expanded" href="#">Inicio</a></div>
+                  <div class="column small-12"><a class="button expanded" href="#">Mi plato perfecto</a></div>
+                  <div class="column small-12"><a class="button expanded" href="#">Mis Recetas</a></div>
+                </div>
+              </div>
+              <br>
+              <!-- Aqui comienza las imagenes favoritas-->
+              <div class="favoritos">
+                <b class="texto-color">Favoritos:</b>
+                <div class="row favoritos-margin">
+                  <div class="columns large-4"><img src="img/gastro1.jpg" alt="Imagen 1"></div>
+                  <div class="columns large-4"><img src="img/gastro2.jpg" alt="Imagen 1"></div>
+                  <div class="columns large-4"><img src="img/gastro3.jpg" alt="Imagen 1"></div>
+                </div><br>
+                <div class="row">
+                  <div class="columns large-4"><img src="img/gastro4.jpg" alt="Imagen 1"></div>
+                  <div class="columns large-4"><img src="img/gastro5.jpg" alt="Imagen 1"></div>
+                  <div class="columns large-4"><img src="img/gastro6.jpg" alt="Imagen 1"></div>
+                </div><br>
+              </div>
+              <div class="historial">
+                <b class="texto-color">Historial:</b><br>
+                <div class="row">
+                  <div class="columns large-12">
+                    <ul class="menu">
+                      <li><a href="#">Postres Fríos para preparar en casa</a></li>
+                      <li><a href="#">Comida Vegana</a></li>
+                      <li><a href="#">Como preparar unos aros de cebolla</a></li>
+                      <li><a href="#">Adquirir conocimientos en comida vegetariana</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row show-for-landscape" style="color:white">
-          <div class="column small-12">
-          Test
+        <div class="columns large-8 logo-columna-derecha">
+          <div class="row columns collapse ">
+            <div class="columna-derecha">
+              <div class="row">
+                <div class="columns large-12"><h3>Pollo a la parrilla</h3><span class="fecha">24 de Julio del 2019</span></div>
+                <div class="columns large-12 large-push-25"><img src="img/post2.png" alt=""></div>
+                <div class="columns large-12">
+                  <p>El pollo es indispensable en toda parrillada. Por su costo y facilidad de cocción no hay parrillada que no incluya este noble animal.
+                    Además, hay muchos comensales que no comen carne roja, entonces es acá cuando un pollo con sal y limón se hace indispensable.</p>
+                </div>
+                <div class="columns large-12 comment">
+                  <form class="" action="index.html" method="post">
+                    <div class="form-icons">
+                      <div class="input-group">
+                        <span class="input-group-label"><i class="step fi-torso size-24"></i></span>
+                        <textarea id="comentario1" class="input-group-field" placeholder="Comentario ..."></textarea>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="columns large-2 large-offset-10 editar text-right"><a class="button extended" href="#"><i class="step fi-pencil size-24"></i>Publicar</a></div>
+                <div class="columns large-12">
+                  <hr>
+                  <div class="row">
+                    <div class="columns large-1"><img src="img/man_icon.png" alt=""></div>
+                    <div class="columns large-11"><b>Pedro_R44</b> - La receta fue muy buena, yo la he probado y me gusto.</div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="columns large-1"><img src="img/woman_icon.png" alt=""></div>
+                    <div class="columns large-11"><b>Sofia_Rodriguez</b> - Sinceramente esperaba una mejor explicación.</div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="columns large-1"><img src="img/man_icon.png" alt=""></div>
+                    <div class="columns large-11"><b>Enrique__1983</b> - Yo le he enseñado esta receta a mi esposa y le ha encantado. Saludos!</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row show-for-landscape">
-          <div class="column small-1 small-offset-3 medium-2 medium-offset-2 large-1 large-offset-7">
-              <a href="index.html">
-                <i class="step fi-social-facebook"></i>
-              </a>
-          </div>
-          <div class="column small-2 medium-2 large-1">
-            <a href="index.html">
-              <i class="step fi-social-instagram"></i>
-            </a>
-          </div>
-          <div class="column small-2 medium-2 large-1">
-            <a href="index.html">
-              <i class="step fi-social-twitter"></i>
-            </a>
-          </div>
-          <div class="column small-2 medium-2 large-1">
-            <a href="index.html">
-              <i class="step fi-social-youtube"></i>
-            </a>
-          </div>
-          <div class="column small-2 medium-2 large-1">
-            <a href="index.html">
-              <i class="step fi-social-yahoo"></i>
-            </a>
+          <div class="row columns collapse ">
+            <div class="columna-derecha">
+              <div class="row">
+                <div class="columns large-12"><h3>Chuleta de Cerdo en Salsa de Tamarindo</h3><span class="fecha">15 de Mayo del 2019</span></div>
+                <div class="columns large-12"><img src="img/post1.jpg" alt=""></div>
+                <div class="columns large-12">
+                  <p>Que mejor convertir estas económicas chuletas en un gran platillo, con una deliciosa salsa que se basa en una receta popular con un
+                  increible saber de salsa de tamarindo, no puede faltar en la cena de tu casa.</p>
+                  <p>Además de ser un platillo muy fácil de preparar y de muy bajo costo.</p>
+                </div>
+                <div class="columns large-12 comment">
+                  <form class="" action="index.html" method="post">
+                    <div class="form-icons">
+                      <div class="input-group">
+                        <span class="input-group-label"><i class="step fi-torso size-24"></i></span>
+                        <textarea id="comentario2" class="input-group-field" placeholder="Comentario ..."></textarea>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="columns large-2 large-offset-10 editar text-right"><a class="button extended" href="#"><i class="step fi-pencil size-24"></i>Publicar</a></div>
+                <div class="columns large-12">
+                  <hr>
+                  <div class="row">
+                    <div class="columns large-1"><img src="img/man_icon.png" alt=""></div>
+                    <div class="columns large-11"><b>Juan2114</b> - He probado esta receta y he quedado muy contento y satisfecho. Gracias!</div>
+                  </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Menu de botones -->
-      <div class="row button-group hide-for-small-only medium-show-for-portrait">
-        <div class="column medium-1 large-1">
-          <a href="#" class="button expanded ">Hogar</a>
-        </div>
-        <div class="column medium-1 large-1">
-          <a href="#" class="button expanded">Salud</a>
-        </div>
-        <div class="column medium-1 large-1">
-          <a href="#" class="button expanded">Deporte</a>
-        </div>
-        <div class="column medium-2 large-2">
-          <a href="#" class="button expanded">Tecnología</a>
-        </div>
-        <div class="column medium-2 large-2">
-          <a href="#" class="button expanded">Accesorios</a>
-        </div>
-        <div class="column medium-1 large-1">
-          <a href="#" class="button expanded">Ropa</a>
-        </div>
-        <div class="column medium-2 large-2">
-          <a href="#" class="button expanded">Mantenimiento</a>
-        </div>
-        <div class="column medium-2 large-2 large-centered">
-          <a href="#" class="button hollow alert expanded">Carrito <i class="step fi-shopping-cart"></i></a>
-        </div>
-      </div>
-    <!-- Menu Breadcrumbs-->
-      <div class="row" aria-hidden="true">
-        <nav aria-label="You are here:" role="navigation">
-          <ul class="breadcrumbs">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Hogar</a></li>
-            <li><a href="#">Varios</a></li>
-            <li>Decoración</li>
-        </nav>
-      </div>
-
-
-      <!-- Inicio de Columnas de Busqueda y Principal-->
-      <div class="row">
-        <div class="column hide-for-small-only medium-4 large-3 ">
-          <div class="callout">
-
-            <!--Lectura del Screen reader-->
-            <div class="show-for-sr">
-              <p>A continuación hay un formulario para hacer búsquedas avanzadas</p>
-            </div>
-
-            <h2 class="hide-for-medium">Búsqueda Avanzada</h2>
-            <h3 class="show-for-medium">Búsqueda Avanzada</h3>
-            <form class="" action="index.html" method="post">
-              <label for="">Por nombre:
-                <input type="text" class="" name="" value="">
-              </label>
-              <label for="">Por referencia:
-                <input type="text" name="" value="" area-describedby="porReferencia">
-              </label>
-              <label>
-            		<p class="help-text" id="porReferencia">
-            		Número único del producto
-            		</p>
-            	</label>
-              <label>Por Categoría:
-                <select>
-                  <option value="1">Hogar</option>
-                  <option value="2">Salud</option>
-                  <option value="3">Deporte</option>
-                  <option value="4">Tecnología</option>
-                  <option value="5">Accesorios</option>
-                  <option value="6">Ropa</option>
-                  <option value="7">Mantenimiento</option>
-                </select>
-              </label>
-              <fieldset class="">
-            		<legend>Tipo de producto:</legend>
-            		<input id="checkbox1" type="checkbox"><label for="checkbox1">Nuevo</label>
-            		<input id="checkbox2" type="checkbox"><label for="checkbox2">Usado</label>
-            	</fieldset>
-              <fieldset class="">
-                <legend>Radio Button</legend>
-                <input type="radio" name="precio" value="Pleno" id="Pleno" required><label for="Pleno">Pleno</label>
-                <input type="radio" name="precio" value="Oferta" id="Oferta"><label for="Oferta">Oferta</label>
-              </fieldset>
-              <label for="">Buscar productos agotados?</label>
-              <div class="switch">
-            		<input class="switch-input" type="checkbox" name="Agotados" id="Agotados">
-            		<label class="switch-paddle" for="Agotados">
-            			<span class="switch-active" aria-hidden="true">Sí</span>
-            			<span class="switch-inactive" aria-hidden="true">No</span>
-            		</label>
-            	</div>
-              <div class="row column text-center">
-                <hr>
-                <a href="#" class="button">Buscar <i class="step fi-magnifying-glass"></i></a>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="column medium-8 large-8 large-offset-1">
-          <div class="callout">
-            <h2 class="">Decoración</h2>
-            <hr>
-            <div class="row">
-              <div class="column medium-6 large-4">
-                <div class="callout secondary">
-                  <div class="row imagen align-center">
-                    <img src="img/imagen1.jpg" class="img-responsive float-center">
-                  </div>
-                  <div class="row titulo">
-                    <h4>Decoración 1</h4>
-                  </div>
-                  <div class="row link">
-                    <a href="#">Ver mas <strong>+</strong></a>
-                  </div>
-                </div>
-              </div>
-              <div class="column  medium-6 large-4">
-                <div class="callout secondary">
-                  <div class="row imagen">
-                    <img src="img/imagen2.jpg" class="img-responsive float-center">
-                  </div>
-                  <div class="row titulo">
-                    <h4>Decoración 2</h4>
-                  </div>
-                  <div class="row link">
-                    <a href="#">Ver mas <strong>+</strong></a>
-                  </div>
-                </div>
-              </div>
-              <div class="column medium-12 large-4">
-                <div class="callout secondary">
-                  <div class="row imagen">
-                    <img src="img/imagen3.jpg" class="img-responsive float-center">
-                  </div>
-                  <div class="row titulo">
-                    <h4>Decoración 3</h4>
-                  </div>
-                  <div class="row link">
-                    <a href="#">Ver mas <strong>+</strong></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="column medium-6 large-4">
-                <div class="callout secondary">
-                  <div class="row imagen">
-                    <img src="img/imagen4.jpg" class="img-responsive float-center">
-                  </div>
-                  <div class="row titulo">
-                    <h4>Decoración 4</h4>
-                  </div>
-                  <div class="row link">
-                    <a href="#">Ver mas <strong>+</strong></a>
-                  </div>
-                </div>
-              </div>
-              <div class="column medium-6 large-4">
-                <div class="callout secondary">
-                  <div class="row imagen">
-                    <img src="img/imagen5.jpg" class="img-responsive float-center">
-                  </div>
-                  <div class="row titulo">
-                    <h4>Decoración 5</h4>
-                  </div>
-                  <div class="row link">
-                    <a href="#">Ver mas <strong>+</strong></a>
-                  </div>
-                </div>
-              </div>
-              <div class="column medium-12 large-4">
-                <div class="callout secondary">
-                  <div class="row imagen">
-                    <img src="img/imagen6.jpg" class="img-responsive float-center">
-                  </div>
-                  <div class="row titulo">
-                    <h4>Decoración 6</h4>
-                  </div>
-                  <div class="row link">
-                    <a href="#">Ver mas <strong>+</strong></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Menu de botones para smartphones Portrait-->
-        <div class="row button-group show-for-small-only stacked-for-small ">
-          <div class="column">
-            <a href="#" class="button expanded ">Hogar</a>
-          </div>
-          <div class="column">
-            <a href="#" class="button expanded">Salud</a>
-          </div>
-          <div class="column">
-            <a href="#" class="button expanded">Deporte</a>
-          </div>
-          <div class="column">
-            <a href="#" class="button expanded">Tecnología</a>
-          </div>
-          <div class="column">
-            <a href="#" class="button expanded">Accesorios</a>
-          </div>
-          <div class="column">
-            <a href="#" class="button expanded">Ropa</a>
-          </div>
-          <div class="column">
-            <a href="#" class="button expanded">Mantenimiento</a>
-          </div>
-          <div class="column">
-            <a href="#" class="button hollow alert expanded">Carrito <i class="step fi-shopping-cart"></i></a>
-          </div>
-        </div>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
