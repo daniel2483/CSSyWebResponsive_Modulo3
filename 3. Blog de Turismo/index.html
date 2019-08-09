@@ -2,7 +2,7 @@
   <html>
     <head>
       <meta charset="utf-8">
-      <title>Materialized CSS</title>
+      <title>Turismo Blog</title>
       <link rel="stylesheet" href="css/styles.css">
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,240 +14,277 @@
 
     <body>
 
-      <!-- Contenedor General -->
+      <!-- Barra de color de arriba-->
+        <div id="header-bar" class="card blue-grey lighten-2 pushpin-fixed">
+
+        </div>
+      <!-- Contenedor Cabecera -->
       <div class="row">
         <div class="col s12">
-
-        <div class="row yellow darken-3 flow-text menu">
-          <div class="input-field col s12 m8 l5 valign-wrapper">
-              <img src="img/logo.svg" class="prefix">
-              <input class="text-white" id="buscar" type="text" name="" value="">
-              <label id="labelBuscar" for="buscar">Buscar</label>
-              <i class="material-icons">search</i>
-          </div>
-          <div id="menu-right" class="col hide-on-small-only m4 l4 offset-l3">
-            <div class="btn-floating grey"><i class="material-icons">email</i></div>
-            <div class="btn-floating grey"><i class="material-icons">linked_camera</i></div>
-            <div class="btn-floating grey"><i class="material-icons">question_answer</i></div>
-          </div>
-        </div>
-
-        <div class="row bloque">
-          <!-- Bloque principal lado izquierdo-->
-          <div class="col s2 push-s10 m2 l2 white border-line">
-            <div class="minimum grey lighten-3">
-              <div class="collection collection1">
-                <!-- Item 1 Javascript-->
-                <a href="#" class="collection-item">
-                  <div class="row">
-                    <div class="col s4">
-                      <img class="" src="img/javascript_logo.png" alt="" style="width:50px">
-                    </div>
-                    <div class="col s8">
-                      <span>Javacript</span><br><div class="orange-text text-darken-3">120 miembros</div>
-                    </div>
-                  </div>
-                </a>
-                <!-- Item 2 Perl-->
-                <a href="#" class="collection-item">
-                  <div class="row">
-                    <div class="col s4">
-                      <img class="" src="img/perl_logo.png" alt="" style="width:50px">
-                    </div>
-                    <div class="col s8">
-                      <span>Perl</span><br><div class="orange-text text-darken-3">45 miembros</div>
-                    </div>
-                  </div>
-                </a>
-                <!-- Item 3 HTML-->
-                <a href="#" class="collection-item">
-                  <div class="row">
-                    <div class="col s4">
-                      <img class="" src="img/html_logo.png" alt="" style="width:50px">
-                    </div>
-                    <div class="col s8">
-                      <span>HTML</span><br><div class="orange-text text-darken-3">255 miembros</div>
-                    </div>
-                  </div>
-                </a>
-                <!-- Item 4 PHP-->
-                <a href="#" class="collection-item">
-                  <div class="row">
-                    <div class="col s4">
-                      <img class="" src="img/php_logo.png" alt="" style="width:50px">
-                    </div>
-                    <div class="col s8">
-                      <span>PHP</span><br><div class="orange-text text-darken-3">89 miembros</div>
-                    </div>
-                  </div>
-                </a>
+          <div class="row inicio">
+            <div class="col hide-on-med-and-down l2">
+            </div>
+            <!-- Contenedor del Logo-->
+            <div class="col s5 m4 l2 callout">
+              <div class="logo">
+                <img class="img-responsive" src="img/logo.svg" alt="En caso de no ver este logo es debido a que tu navegador no soporta su visualización">
               </div>
             </div>
-          </div>
-          <div class="col s10 pull-s2 m7 l7 white principal z-depth-1">
-            <div class="row">
-                <div class="row border-line">
-                  <!-- 1era columna Principal-->
-                  <div class="col s12 m12 l8 border-line publicaciones">
-                    <div class="white minimum">
-                      <!-- Primera Card del Bloque Publicion-->
-                      <div class="card yellow lighten-4" id="card1">
-                        <div class="card-content">
-                          <!-- Fila titulo -->
-                          <div class="row">
-                            <div class="col s12 m12 l12">
-                              Escribe una nueva publicación
-                            </div>
-                          </div>
-                          <!-- Fila textarea -->
-                          <div class="row">
-                            <div class="col s12 m12 l12">
-                              <div class="input-field black-text"><textarea id="publicacion-texto" class="materialize-textarea"></textarea></div>
-                            </div>
-                          </div>
-                          <!-- Fila botones izquierdos y derecho -->
-                          <div class="row">
-                            <!-- Botones del lado izquierdo -->
-                            <div class="col s8 m6 l4">
-                              <div class="btn-floating grey"><i class="material-icons">code</i></div>
-                              <div class="btn-floating grey"><i class="material-icons">edit</i></div>
-                              <div class="btn-floating grey"><i class="material-icons">mic</i></div>
-                            </div>
-                            <!-- Boton del lado derecho Para dispositivos Small Medium y Large-->
-                            <div class="col hide-on-small-only m4 offset-m2 l4 offset-l4">
-                              <div class="btn-flat grey right"><i class="material-icons">send</i></div>
-                            </div>
-                            <div class="col s4 hide-on-med-and-up">
-                              <div class="btn-floating grey right"><i class="material-icons">send</i></div>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                      <!-- Segunda Card del Bloque Publicion-->
-                      <div class="card yellow lighten-4" id="card2">
-                        <div class="card-content">
-                          <span class="card-title waves-effect waves-block waves-light">Daniel2483:<i class="material-icons right activator card-icon">more_vert</i></span>
-                          <p class="texto">En este vídeo les quiero compartir como iniciar con el editor de imágenes en GIMP.</p>
-                        </div>
-                        <div class="card-image">
-                          <div class="video-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/84o6FGuE2Mk" frameborder="0" allow="" allowfullscreen></iframe>
-                            <!--<video class="responsive-video" src="video/Video_1_GIMP.mp4"  autoplay controls poster="img/gimp_img.jpg">
-                              <p class="texto">Si ves esto es porque tu navegador no soporta HTML5.</p>
-                            </video>-->
-                          </div>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title">Daniel2483:<i class="material-icons right card-icon">close</i></span>
-                          <p class="texto" >En este vídeo podrás ver el paso a paso de como puedes utilizar GIMP para edición de imágenes, así como ver su instalación.</p>
-                        </div>
-                      </div>
-                      <!-- Contenido de la tercera Card -->
-                      <div class="card yellow lighten-4" id="card3">
-                        <div class="card-content">
-                          <span class="card-title waves-effect waves-block waves-light">Jose0524:<i class="material-icons activator right card-icon">more_vert</i></span>
-                          <p class="texto">
-                            Tengo una duda sobre Materialized CSS.
-                          </p>
-                          <blockquote class="texto">
-                            En esta ocasión estoy aprendiendo a desarrollar páginas web, crear íconos y utilizar múltiples Frameworks, para lograr este objetivo.
-                            Durante toda mi vida he trabajado en el área de Tecnología, por lo que el desarrollo web y de aplicaciones siempre ha sido una prioridad.
-                          </blockquote>
-                        </div>
-
-                        <div class="card-reveal flow-text">
-                          <span class="card-title">Duda sobre Materialized CSS <i class="material-icons right card-icon">close</i></span>
-                          <p class="texto">Este tema lo puedes solucionar utlizando las clases propias de Materialized con la creacion de Menus Flotantes.</p>
-                        </div>
-                      </div>
+            <!-- Contenedor del menu de arriba-->
+            <div class="col s7 m8 l8">
+              <div class="row">
+                <div class="col s12 menu-top">
+                  <nav>
+                    <div class="nav-wrapper z-depth-0">
+                      <ul class="right">
+                        <li><a class="btn" href="./index.html"><i class="material-icons left">home</i>INICIO</a></li>
+                        <li><a class="btn" href="./index.html"><i class="material-icons left">location_on</i>ESTUVE EN...</a></li>
+                        <li><a class="btn" href="./index.html"><i class="material-icons left">star</i>MEJORES VIAJES</a></li>
+                        <li><a class="btn" href="./index.html"><i class="material-icons left">comment</i>RECOMENDACIONES</a></li>
+                      </ul>
                     </div>
-                  </div>
-                  <!-- 2da columna Principal-->
-                  <div class="col hide-on-med-and-down l3 offset-l1 border-line ">
-                    <div class="yellow lighten-4 z-depth-1 noticias">
-                      <h2 class="flow-text center-align">Ultimas Noticias</h2>
-                      <p class="flow-text truncate">- Se ha publicado las últimas noticias acerca de las nuevas laptops</p>
-                      <img class="responsive-img" src="img/imagen1.jpg" alt="Imagen 1">
-                      <p class="flow-text truncate">- Publicacion de tpc HP para hogar</p>
-                      <img class="responsive-img" src="img/imagen2.jpg" alt="Imagen 2">
-                      <p class="flow-text truncate">- Se está vendiendo una laptop</p>
-                      <img class="responsive-img" src="img/imagen3.jpg" alt="Imagen 3">
-                    </div>
-                  </div>
+                  </nav>
                 </div>
-            </div>
-          </div>
-          <div class="col hide-on-small-only m3 white derecha chat" >
-            <div class="row">
-              <!-- Bloque de Actividades -->
-              <div class="col s12" >
-                <div class=" white-text minimum-chat border-line" >
-                  <ul class="collection with-header" id="chat1">
-                    <li class="collection-header grey"><h4>Actividades Recientes</h4>
-                    <li class="collection-item grey white-text">
-                      <div class="row">
-                        <div class="col m4 l2 valign-wrapper"><div class="btn-floating blue"><i class="material-icons">refresh</i></div></div>
-                        <div class="col m8 l10"><span>Maria_DB <br>Respondió tu pregunta</span></div>
-                      </div>
-                    </li>
-                    <li href="#" class="collection-item grey white-text">
-                      <div class="row">
-                        <div class="col m4 l2 valign-wrapper"><div class="btn-floating green lighten-3"><i class="material-icons">group_add</i></div></div>
-                        <div class="col m8 l10"><span>CodigosOnline <br>Quiero Agregarte como amigo</span></div>
-                      </div>
-                    </li>
-                    <li href="#" class="collection-item grey white-text">
-                      <div class="row">
-                        <div class="col m4 l2 valign-wrapper"><div class="btn-floating orange darken-2"><i class="material-icons">help</i></div></div>
-                        <div class="col m8 l10"><span>Felipe_21 <br>Te hizo una pregunta</span></div>
-                      </div>
-                    </li>
-                    <li href="#" class="collection-item grey white-text">
-                      <div class="row">
-                        <div class="col m4 l2 valign-wrapper"><div class="btn-floating purple darken-3"><i class="material-icons">people</i></div></div>
-                        <div class="col m8 l10"><span>Jose1234 <br>Quiere reunirse contigo</span></div>
-                      </div>
-                    </li>
-                    <li href="#" class="collection-item grey white-text">
-                      <div class="row">
-                        <div class="col m4 l2 valign-wrapper"><div class="btn-floating purple darken-3"><i class="material-icons">people</i></div></div>
-                        <div class="col m8 l10"><span>Rocio3333<br>Quiere reunirse contigo</span></div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!-- Bloque de Chat -->
-              <div class="col s12">
-                <div class="grey lighten-4 black-text minimum-chat border-line">
-                  <div id="chat2" class="chat_right_down">
-                    <h4 class=" text-black">Chat</h4>
-                    <hr><div class="chip"><img src="img/man_icon.png" alt="">Juan_Jose</div>
-                    <hr><div class="chip"><img src="img/man_icon.png" alt="">Pedro_1192</div>
-                    <hr><div class="chip"><img src="img/woman_icon.png" alt="">Maria_DB</div>
-                    <hr><div class="chip"><img src="img/man_icon.png" alt="">Felip45</div>
-                    <hr><div class="chip"><img src="img/woman_icon.png" alt="">Rocio_T545</div>
-                    <hr><div class="chip"><img src="img/man_icon.png" alt="">JJ_1598</div>
-                    <hr><div class="chip"><img src="img/woman_icon.png" alt="">M_rodriguez_1983</div>
+                <div class="row">
+                  <div class="col hide-on-med-and-down l12">
+                    <h3 class="slogan">Descansa, Visita, Viaja ...</h3>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="fixed-action-btn hide-on-small-only" style="bottom:7%; left:7%">
-            <a class="btn-floating orange"><i class="material-icons">build</i></a>
-            <ul style="text-align:left !important">
-              <li><a class="btn-floating blue lighten-2"><i class="material-icons">notifications_active</i></a></li>
-              <li><a class="btn-floating green "><i class="material-icons">share</i></a></li>
-              <li><a class="btn-floating yellow"><i class="material-icons">lock_open</i></a></li>
-              <li><a class="btn-floating red"><i class="material-icons">volume_off</i></a></li>
-            </ul>
+
+
+          <!-- Contenedor menu izquierdo e imagenes principales-->
+          <div class="row principal">
+            <!--Menu izquierdo de Redes Sociales-->
+            <div class="col hide-on-med-and-down m1 menu-redes">
+              <div class="card content-card">
+                <nav>
+                  <div class="nav">
+                    <ul class="left">
+                      <li><a class="" href="./index.html"> <img src="img/instagram_logo.png" alt="Intagram Link"> </a></li>
+                      <li><a class="" href="./index.html"> <img src="img/facebook_logo.png" alt="Facebook Link"></a></li>
+                      <li><a class="" href="./index.html"> <img src="img/twitter_logo.png" alt="Twitter Link"></a></li>
+                      <li><a class="" href="./index.html"> <img src="img/pinterest_logo.png" alt="Pinterest Link"></a></li>
+                      <li><a class="" href="./index.html"> <img src="img/youtube_logo.png" alt="Youtube Link"></a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <!--Rejilla central de Fotografias-->
+            <div class="col s12 m11 fotos">
+              <div class="card content-card">
+
+
+              <div class="row">
+                <div class="col s12 m4">
+                  <div class="row">
+                    <div class="col s12 m12">
+                      <img class="img-responsive z-depth-4" src="img/paisaje1.jpg" alt="">
+                    </div>
+                    <div class="col s12 m12">
+                      <img class="img-responsive z-depth-4" src="img/paisaje2.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m4">
+                  <div class="row">
+                    <div class="col s12 m12">
+                      <img class="img-responsive z-depth-4" src="img/paisaje5.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m4">
+                  <div class="row">
+                    <div class="col s12 m10">
+                      <img class="img-responsive z-depth-4" src="img/paisaje3.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s12 m10">
+                      <img class="img-responsive z-depth-4" src="img/paisaje4.jpeg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Publicacion 1 -->
+            <!-- Card de Entrada 1 al Blog -->
+            <div class="row publicacion" id="publicacion1">
+              <div class="col l9">
+                <div class="card card1">
+                  <div class="card-title">
+
+                  </div>
+                  <div class="card-content justify-align flow-text">
+                    <img id="img-entrada1" class="" src="img/card_image.jpg" alt="">
+                    <h3>Atardecer en Nueva Zelanda</h3>
+                    <div class="chip">
+                      13 de Agosto de 2018 <i class="material-icons right">date_range</i>
+                    </div>
+                    <div class="chip">
+                      Auckland, Nueva Zelanda <i class="material-icons right">location_on</i>
+                    </div>
+
+                    <p>La ciudad más poblada de Nueva Zelanda tiene un interesante aire cosmopolita y cientos de cosas para hacer.
+                      Si hay que elegir, el ícono de Auckland es la Sky Tower, una torre futurista que con 328 metros es la estructura
+                      más alta del hemisferio sur. En sólo 40 segundos se llega en ascensor a la cima. Allí, el piso es transparente y
+                      la imagen de la ciudad a los pies del visitante es única, igual que el horizonte, con vistas de hasta 80 kilómetros
+                      en cualquier dirección. </p>
+                      <br>
+                    <p>Se puede saltar desde otro punto más bajo de la torre -a 192 metros nada despreciables- o sentirse como el Hombre
+                      Araña, dando una vuelta a esa misma altura, pero sobre una plataforma de 1,2 metros de ancho, arnés de por medio.</p>
+                      <br>
+                      <p>Es todo lo paradisíaco que puede imaginarse al pensar en las playas neozelandesas. Esta bahía de islas está bien al
+                        norte de la Isla Norte y se compone a su vez de más de 150 pequeñas islas deshabitadas entre las que se puede navegar,
+                        nadar solo o con delfines, o simplemente tirarse en la arena a contemplar el mar turquesa. Entre las ciudades destacadas
+                        está Paihia, preferida por los locales para vacacionar, y también Kerikeri, con bellos paisajes y huertos -fuente laboral
+                        para trabajadores temporarios- de kiwis y cítricos.</p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+              <div class="col l3">
+                <div class="card card1">
+                  <div class="card-title center-align">
+                    <img class="circle" id="owner" src="img/my_photo.jpg" alt="">
+                    <h3>Perfil del Autor</h3>
+                  </div>
+                  <hr>
+                  <div class="card-content flow-text justify-align">
+                    <p>El autor de esta descripción se encuentra viviendo actualmente en Costa Rica y conoce muchos lugares alrededor del mundo
+                    ya que por razones laborales se desplaza continuamente de país en país.</p> <br>
+                    <p>Su nombre es Daniel Rodríguez y está dispuesto a compartir con cada uno de nosotros sus experiencias a través
+                      de su vida y además de darnos las mejores recomendaciones de visitas a lo largo de todo el mundo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card para inputs de comentarios Entrada 1-->
+            <div class="row publicacion-comment" id="publicacion-comment1">
+              <div class="col s12 m9">
+                <div class="card card1 teal lighten-3">
+                  <br>
+                  <div class="row">
+                    <div class="input-field col s12 m6">
+                      <i class="material-icons prefix">perm_identity</i>
+                      <input id="nombre" type="text" name="" value="" class="validate">
+                      <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                      <i class="material-icons prefix">email</i>
+                      <input id="email" type="email" name="" value="" class="validate">
+                      <label for="email" data-success="Correcto" data-error="Debes completar este campo">Correo electronico</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col input-field s12">
+                      <i class="material-icons">person</i>
+                      <textarea id="comment1" class="materialize-textarea"></textarea>
+                      <label for="comment1">Comentario ...</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s12 right-align">
+                      <a class="btn btn-small teal waves-effect enviar-comment" href="">Enviar <i class="material-icons">send</i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Publicacion 2 -->
+            <!-- Card de Entrada 1 al Blog -->
+            <div class="row publicacion" id="publicacion2">
+              <div class="col l9">
+                <div class="card card1">
+                  <div class="card-title">
+
+                  </div>
+                  <div class="card-content justify-align flow-text">
+                    <img id="img-entrada2" class="" src="img/card_image2.jpg" alt="">
+                    <h3>Volcán ArenalCosta Rica</h3>
+                    <div class="chip">
+                      14 de Febrero de 2019 <i class="material-icons right">date_range</i>
+                    </div>
+                    <div class="chip">
+                      Alajuela, Costa Rica <i class="material-icons right">location_on</i>
+                    </div>
+
+                    <p>No se puede negar que el Parque Nacional Volcán Arenal es uno de los lugares más espectaculares de Alajuela.
+                      Experimente la majestuosidad de Costa Rica de primera mano y vea de cerca uno de los volcanes más activos que existen
+                      en la actualidad. Si bien el volcán no ha exhibido ninguna actividad recientemente, los científicos todavía creen que
+                      Arenal no está inactivo.</p>
+                      <br>
+                    <p>Si se encuentra visitando la ciudad de Alajuela en Costa Rica, y quiere ver un espectáculo sin igual, considere un emocionante
+                      y pintoresco viaje al parque nacional que rodea al Arenal. Por supuesto, el parque es perfectamente seguro para visitar. Si el volcán
+                      alguna vez pudiera representar algún tipo de riesgo de erupción en alguna manera que podría representar un peligro para los visitantes,
+                      una evacuación se llevaría a cabo con mucha anticipación.</p>
+                      <br>
+                    <br>
+                  </div>
+                </div>
+              </div>
+              <div class="col l3">
+                <div class="card card1">
+                  <div class="card-title center-align">
+                    <img class="circle" id="owner" src="img/my_photo.jpg" alt="">
+                    <h3>Perfil del Autor</h3>
+                  </div>
+                  <hr>
+                  <div class="card-content flow-text justify-align">
+                    <p>El autor de esta descripción se encuentra viviendo actualmente en Costa Rica y conoce muchos lugares alrededor del mundo
+                    ya que por razones laborales se desplaza continuamente de país en país.</p> <br>
+                    <p>Su nombre es Daniel Rodríguez y está dispuesto a compartir con cada uno de nosotros sus experiencias a través
+                      de su vida y además de darnos las mejores recomendaciones de visitas a lo largo de todo el mundo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card para inputs de comentarios Entrada 2-->
+            <div class="row publicacion-comment" id="publicacion-comment2">
+              <div class="col s12 m9">
+                <div class="card card1 teal lighten-3">
+                  <br>
+                  <div class="row">
+                    <div class="input-field col s12 m6">
+                      <i class="material-icons prefix">perm_identity</i>
+                      <input id="nombre" type="text" name="" value="" class="validate">
+                      <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                      <i class="material-icons prefix">email</i>
+                      <input id="email" type="email" name="" value="" class="validate">
+                      <label for="email" data-success="Correcto" data-error="Debes completar este campo">Correo electronico</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col input-field s12">
+                      <i class="material-icons">person</i>
+                      <textarea id="comment1" class="materialize-textarea"></textarea>
+                      <label for="comment1">Comentario ...</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s12 right-align">
+                      <a class="btn btn-small teal waves-effect enviar-comment" href="">Enviar <i class="material-icons">send</i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
           </div>
+
+
         </div>
       </div>
 
-      </div>
+
+
 
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -262,6 +299,9 @@
             hoverEnabled: false
           });
         });
+
+
+
       </script>
     </body>
   </html>
